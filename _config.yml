@@ -18,8 +18,8 @@ gradescope_class_url:
 github_url: https://github.com/ucsb-ccs-computing/W20-130H
 
 start_week: 0
-start_date: 2019-09-22 00:00:00.00-7:00
-num_weeks: 11
+start_date: 2020-01-05 00:00:00.00-7:00
+num_weeks: 10
 extra_exam_week: true
 
 cal_dates: >                                                                    
