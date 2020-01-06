@@ -1,0 +1,75 @@
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+
+remote_theme: ucsb-cs-course-repos/course-repo-jekyll-theme
+
+url: https://ucsb-ccs-computing.github.io
+baseurl: "/W20-130H"
+
+course: "CMPTGCS 130H"
+qtr: "W20"
+instructor: "Richert Wang"
+quarter: "Winter 2020"
+piazza_url: 
+gauchospace_course_page:
+gradescope_class_url:
+
+github_url: https://github.com/ucsb-ccs-computing/W20-130H
+
+start_week: 0
+start_date: 2019-09-22 00:00:00.00-7:00
+num_weeks: 11
+extra_exam_week: true
+
+cal_dates: >                                                                    
+  [                                                                            
+    {"label":"W20 1st day of instruction", "date":"2020-01-06" },              
+    {"label":"Univ Holiday", "date":"2020-01-20" },                            
+    {"label":"Univ Holiday", "date":"2020-02-17" },                            
+    {"label":"W20 instruction ends", "date":"2020-03-13" },                    
+    {"label":"W20 finals start", "date":"2020-03-14" },                        
+    {"label":"W20 finals end", "date":"2020-03-20" },                          
+    {"label":"W20 qtr ends", "date":"2020-03-20" }                              
+  ]
+
+kramdown:
+   parse_block_html: true
+   default_lang: cpp
+
+exclude:
+   - vendor
+   - _hwk/keep
+   - _lab/keep
+   - _exam/keep
+   - _lectures/keep
+   - _info/keep        
+include:
+   - _pages
+   
+timezone: America/Los_Angeles
+
+collections:
+  info:
+    output: true
+    permalink: /info/:path/
+
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: default
+  - 
+    scope:
+      path: ""
+      type: info
+    values:
+      layout: default
+  -
+    scope:
+      path: "syllabus.md"
+      type: info
+    values:
+      layout: handout
